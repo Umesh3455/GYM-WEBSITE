@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umesh Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            font-family: 'Delicious Handrawn', cursive;
+            background: url('images/img.jpg');
+            background-size: cover;
+            color: white;
+            background-repeat: no-repeat;
+        }
+
+        .left {
+            display:inline-block;
+           /* border: 2px solid blue;*/
+            position: absolute;
+            left: 1px;
+            top: 20px;
+        }
+
+        .mid {
+            display: block;
+            margin: 20px auto;
+            width: 45%;
+           /* border: 2px solid rgb(191, 191, 206);*/
+        }
+
+        .right {
+            position: absolute;
+            right: 1px;
+            top: 20px;
+            display: inline-block;
+           /* border: 2px solid rgb(61, 61, 222);*/
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 23px;
+        }
+
+        .navbar li a {
+
+            padding: 8px 9px;
+            text-decoration: none;
+            color: white;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(122, 122, 129);
+        }
+
+        .left img {
+            width: 75px;
+            margin: 12px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+        }
+        .left .text{
+            margin: -16px;
+        }
+
+        .btn {
+            margin: 7px auto;
+            padding: 5px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            cursor: pointer;
+            border-radius: 11px;
+            border: 5px solid rgb(0, 0, 0);
+            font-size: 20px;
+            font-family: 'Delicious Handrawn', cursive;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(127, 125, 125);
+        }
+
+        .container {
+            border: 3px solid rgb(22, 25, 22);
+            margin: 71px;
+            padding: 38px;
+            width: 23%;
+            border-radius: 23px;
+        }
+
+        .formgroup input {
+            font-family: 'Delicious Handrawn', cursive;
+            margin: 10px auto;
+            padding: 7px;
+            width: 90%;
+            text-align: center;
+            display: block;
+            background-color:#1e0c0c;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+           display: block;
+           margin: auto; 
+           width: 34%;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="images/gym.jpeg" alt="">
+            <div class="text">Umesh Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">home</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">fitness calculator</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+        <div class="container">
+            <div>
+
+                <h1>JOIN THE BEST GYM.</h1>
+                <form action="noaction.php">
+                    <div class="formgroup">
+                        <input type="text" name="" placeholder="Enter Your Name">
+                    </div>
+                    <div class="formgroup">
+                        <input type="text" name="" placeholder="Enter Your Age">
+                    </div>
+                    <div class="formgroup">
+                        <input type="text" name="" placeholder="Enter Your Gendeer">
+                    </div>
+                    <div class="formgroup">
+                        <input type="text" name="" placeholder="Enter Your Phone Number">
+                    </div>
+                    <button class="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+</body>
+
+</html>
